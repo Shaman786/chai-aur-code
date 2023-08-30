@@ -9,6 +9,8 @@ function App() {
   let newArr = [1, 2, 3];
   return (
     <>
+
+
       <div className="flex items-center justify-center h-screen">
         <h1 className="bg-green-400 text-black p-4  rounded-xl">
           Tailwind test
