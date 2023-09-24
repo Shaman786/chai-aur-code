@@ -22,7 +22,7 @@ const reactElement = React.createElement(
     target: "_blank",
   },
   "Click me to visit google",
-  anotherElement
+  anotherElement,
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(reactElement);
