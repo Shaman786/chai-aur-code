@@ -59,8 +59,8 @@
 // const authService = new AuthService();
 // export default authService;
 
+import { Account, Client, ID } from "appwrite";
 import conf from "../conf/conf.js";
-import { Client, Account, ID } from "appwrite";
 
 export class AuthService {
   client = new Client();
@@ -79,7 +79,7 @@ export class AuthService {
         ID.unique(),
         email,
         password,
-        name
+        name,
       );
       if (userAccount) {
         // call another method
@@ -104,7 +104,7 @@ export class AuthService {
     try {
       return await this.account.get();
     } catch (error) {
-      console.log("Appwrite serive :: getCurrentUser :: error", error);
+      console.log("Appwrite service :: getCurrentUser :: error", error);
     }
 
     return null;
