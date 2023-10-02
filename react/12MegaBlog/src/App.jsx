@@ -1,7 +1,11 @@
+import { useState } from "react";
 import "./App.css";
+import { useDispatch } from "react-redux";
 
 function App() {
-  console.log(import.meta.env.VITE_REACT_APP_APPWRITE_URL);
+  //loading state
+  const [loading, setLoading] = useState(true);
+  const dispatch = useDispatch();
   return (
     <>
       <h1 className="font-sans">A blog App with appwrite</h1>
