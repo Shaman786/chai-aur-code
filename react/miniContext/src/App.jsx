@@ -8,6 +8,7 @@ function App() {
       <h1>React with Chai and share is important</h1>
       <Login />
       <Profile />
+      {console.log("Hey")}
     </UserContextProvider>
   );
 }
